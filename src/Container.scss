@@ -1,0 +1,45 @@
+html {
+  height: 100%;
+  background: linear-gradient(red,orange);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  text-align: center;
+  margin: 100px auto;
+
+  .text {
+    margin: 60px auto;
+    margin-top: 200px;
+    z-index: 0;
+
+    i {
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      margin-left: -170px;
+      opacity: .3;
+      font-size: 400px;
+      z-index: -2;
+      animation-name: rotate;
+      animation-duration: 12s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+    }
+
+    .textField {
+      background-color: lightgray;
+      outline: none;
+      border: solid 3px black;
+      text-align: center;
+      font-size: 5vw;
+    }
+  }
+}
+
+@keyframes rotate {
+  0% {transform: rotate(0deg)}
+  50% {transform: rotate(360deg)}
+  100% {transform: rotate(0deg)}
+}
